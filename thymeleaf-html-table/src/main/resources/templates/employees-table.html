@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Thymeleaf HTML table</title>
+</head>
+<body>
+    <h3>Employees HTML Thymeleaf Table</h3>
+    <hr>
+    <!-- Create table -->
+    <table border="1">
+        <!-- Table header -->
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterate model data to add to table rows -->
+            <tr th:each="employee : ${employees}">
+                <td th:text="${employee.firstName}"/>
+                <td th:text="${employee.lastName}"/>
+                <td th:text="${employee.email}"/>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
