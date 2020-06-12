@@ -10,4 +10,5 @@ Endpoint: /localhost:8080/employees
 ## Step 1 - In-memory data (thymeleaf-html-table)
 Simple project, no style, no redirected index.html.  
 
-## Step 2 - Add Bootstrap CSS style
+## Step 2 - Add Bootstrap CSS style (thymeleaf-html-table-css-bootstrap)
+Added Bootstrap CSS style to thymeleaf-html-table project
